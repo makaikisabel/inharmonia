@@ -1,7 +1,7 @@
 'use client'
 import { useTranslation } from 'react-i18next';
 
-const page = () => {
+const Page = () => {
   const { t } = useTranslation();
 
   const impressumText = [
@@ -56,6 +56,6 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
 
 
