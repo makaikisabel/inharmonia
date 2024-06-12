@@ -51,16 +51,11 @@ export default function Merch() {
           <h1 className="md:text-left text-5xl p-2 uppercase">
             {t("menu_merch")}
           </h1>
-        
-
-          <Trans i18nKey="merch_Detail">
- <a href="mailto:info@inharmoniaofficial.com">info@inharmoniaofficial.com</a>
-</Trans>
+          <p>{t("merch_Details")}</p>        
 
 
-{/* <Trans i18nKey="merch_Detail" >
-  Hello <strong title={t('merch_Detail')}>{{email}}</strong>, you have  unread message..
-</Trans> */}
+
+
 
 
 
