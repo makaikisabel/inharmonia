@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .covered-by-your-grace-regular {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body { 
+  padding-top: 55px
+}
+
+/* ##############################   FONTS   ############################## */
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  p, li {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .SIL {
+    font-family: "Shadows Into Light", cursive;
+
+    }
+
+    #impress a {
+      /* color: #0077B6 */
+        color: #023EA8
+
+    }
+  footer a:hover, #impress a:hover {
+      text-decoration: underline;
+    }
+    .img-slider-btn {
+      all: unset;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 1rem;
+      cursor: pointer;
+      transition: 100ms ease-in-out;
+    }
+    .img-slider-btn:hover{
+      background-color: rgb(0, 0, 0,0.2);
+    }
+
+    .img-slider-btn > * {
+      stroke: white;
+      fill: black;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .img-slider-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      flex-shrink: 0;
+      flex-grow: 0;
+      transition: translate 300ms ease-in-out;
+    }
+
+    }
+
+
+
+  
+
+/* ##############################   FONTS END  ############################## */
+
+/* ##############################   SCROLL   ############################## */
+* {
+  scroll-padding-top: 100px; /* height of sticky header  > a jump fix in case of the sticky header*/
+}
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+
+
+/* *::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+} */
+
+/* ##############################   SCROLL END  ############################## */
+
+.card{
+  @apply p-2 m-2 bg-white mx-auto lg:mx-2 rounded-sm
+}
+
+.theme-dark {
+  @apply bg-gradient-to-tr from-stone-900  via-gray-900 to-black
+}
+.theme-red {
+@apply bg-gradient-to-tl from-rose-950   to-red-700  rounded-2xl
+}
+
+.theme-red2 {
+@apply bg-gradient-to-bl from-rose-950   to-red-500
+}
+
+

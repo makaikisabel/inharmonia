@@ -8,10 +8,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'cover-intro': "url('/images/intro_cover.jpg')",
+        'cover-image': "url('/images/cover.jpg')",
+        'cover-albums': "url('/images/albums_cover.jpg')",
+        'cover-merch': "url('/images/merch_cover.jpg')",
       },
+      
+      animation: {
+        'bounce-slow': '2s bounce   infinite ease-in ',
+      }
+      
     },
   },
   plugins: [],
