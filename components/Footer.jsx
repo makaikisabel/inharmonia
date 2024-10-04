@@ -12,7 +12,7 @@ export default function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   const Mailto = ({
-    email = "makaikisabel@gmail.com",
+    email = "inharmoniaofficial@gmail.com",
     subject = "koncert szervezés",
     body = `Kedves Inharmónia`,
     children,
@@ -63,7 +63,7 @@ export default function Footer() {
                           className="inline-block mx-1 text-center"
                           alt="envelope"
                         />
-                        info@inharmonia.hu
+                        inharmoniaofficial@gmail.com
                       </Mailto>
                     </h1>
                   </li>
