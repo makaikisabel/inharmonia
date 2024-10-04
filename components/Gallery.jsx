@@ -62,7 +62,7 @@ export default function Gallery() {
                 <Image
                   src={arrowLeft}
                   alt="arrowLeftIcon"
-                  className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150  duration-300"
+                  className="transition ease-in-out delay-150    duration-300"
                 />
               </button>
               <button
@@ -72,7 +72,7 @@ export default function Gallery() {
                 <Image
                   src={arrowRight}
                   alt="arrowRightIcon"
-                  className="transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-150 duration-300"
+                  className="transition ease-in-out delay-150   duration-300"
                 />
               </button>
             </div>
@@ -82,3 +82,4 @@ export default function Gallery() {
     </>
   );
 }
+

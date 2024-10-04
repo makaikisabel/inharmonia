@@ -1,7 +1,7 @@
 'use client'
 import { useTranslation } from 'react-i18next';
 
-const page = () => {
+const Page = () => {
   const { t } = useTranslation();
 
   const impressumText = [
@@ -9,10 +9,10 @@ const page = () => {
    {title: t('impressum_Title2'), description: 'www.inharmonia.hu', url: '/#hero'},
    {title: t('impressum_Title3'), description: t('impressum_Desc3')},
    {title: t('impressum_Title4'), description: '+36205239292', url: 'tel:+36205239292'},
-   {title: t('impressum_Title5'), description: 'info@inharmonia.hu', url: 'mailto:info@inharmonia.hu'},
+   {title: t('impressum_Title5'), description: 'inharmoniaofficial@gmail.com', url: 'inharmoniaofficial@gmail.com'},
    {title: t('impressum_Title6'), description: t('impressum_Desc6'), url: 'https://www.linkedin.com/in/%C3%A1bel-makai-kis-a2904425a/'},
    {title: t('impressum_Title7'), description: t('impressum_Desc7'), url: 'https://www.instagram.com/anett.sulics/'},
-   {title: t('impressum_Title8'), description: t('impressum_Desc8') + ' Kft (1234 Város, Minta utca 123., info@tarhelyszolgaltato.hu)', url: 'https://www.instagram.com/anett.sulics/'},
+   {title: t('impressum_Title8'), description: ' BlazeArts Kft. (székhely: 1096 Budapest, Thaly Kálmán utca 39.', url: 'https://www.forpsi.hu/'},
   ]
 
   const sources = [
@@ -56,6 +56,6 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
 
 
